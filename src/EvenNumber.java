@@ -7,8 +7,18 @@ public class EvenNumber {
 	//if n is even return true
 	//if n is odd return false
 	
-boolean isEven(int n)
+public boolean isEven(int n)
 {
-	return true;
+	
+	
+	if( n % 2 == 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+	
 }
 }

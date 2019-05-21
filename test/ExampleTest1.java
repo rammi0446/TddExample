@@ -15,12 +15,25 @@ public class ExampleTest1 {
 	}
 
 	@Test
-	public void test() {
+	public void testeven() {
 		EvenNumber x = new EvenNumber();
 		boolean actualOutput = x.isEven(2);
 		assertEquals(true,actualOutput);
-				
-				
+	}
+	
+	@Test
+	public void testOdd() {
+		EvenNumber x = new EvenNumber();
+		boolean actualOutput = x.isEven(2);
+		assertEquals(false,actualOutput);
+	}
+	
+	@Test
+	public void testLessThan1() {
+		EvenNumber x = new EvenNumber();
+		boolean actualOutput = x.isEven(0);
+		System.out.println("function ouput" +x.isEven(0));
+		assertEquals(true,actualOutput);
 	}
 
 }
